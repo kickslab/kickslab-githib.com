@@ -48,11 +48,12 @@ header {
 }
 
 .hero p {
-  font-size: 18px;
-  opacity: 0.85;
-  margin-bottom: 25px;
+  font-size: 20px;
+  opacity: 0.9;
   color: #ccc;
+  font-weight: 500;
 }
+
 
 .hero .btn {
   background: #ff3c00; /* luxury orange accent */
