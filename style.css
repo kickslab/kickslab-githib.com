@@ -2,7 +2,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #121212; /* Dark luxury background */
+  background: #121212;
   color: #f0f0f0;
 }
 
@@ -18,7 +18,7 @@ header {
 
 .hero {
   position: relative;
-  background: url('images/hero-banner.jpg.png') no-repeat center/cover;
+  background: url('images/hero-banner.jpg.jpeg') no-repeat center/cover;
   color: white;
   text-align: center;
   padding: 160px 20px;
@@ -31,7 +31,7 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.6); /* darker overlay for luxury */
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .hero h2, .hero p, .hero .btn {
@@ -49,14 +49,14 @@ header {
 
 .hero p {
   font-size: 20px;
-  opacity: 0.9;
+  opacity: 0.85;
+  margin-bottom: 25px;
   color: #ccc;
   font-weight: 500;
 }
 
-
 .hero .btn {
-  background: #ff3c00; /* luxury orange accent */
+  background: #ff3c00;
   color: white;
   padding: 14px 28px;
   text-decoration: none;
@@ -122,7 +122,7 @@ header {
   display: inline-block;
   margin-top: 12px;
   padding: 10px 14px;
-  background: #25d366; /* WhatsApp green */
+  background: #25d366;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -148,7 +148,7 @@ footer {
   display: inline-block;
   margin-top: 12px;
   padding: 10px 20px;
-  background: #E1306C; /* Instagram pink */
+  background: #E1306C;
   color: white;
   text-decoration: none;
   border-radius: 50px;
