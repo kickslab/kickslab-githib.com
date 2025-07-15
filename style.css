@@ -16,17 +16,19 @@ header {
   background: url('images/shoe1.jpg') no-repeat center/cover;
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 120px 20px;
 }
-
 .hero .btn {
-  background: #ff5a00;
+  background: #ff3c00;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 25px;
   text-decoration: none;
   border-radius: 5px;
+  transition: 0.3s;
 }
-
+.hero .btn:hover {
+  background: #e63200;
+}
 .products {
   padding: 40px 20px;
   text-align: center;
@@ -43,8 +45,14 @@ header {
 .product-card {
   background: white;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
 .product-card img {
