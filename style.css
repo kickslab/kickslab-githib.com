@@ -18,7 +18,7 @@ header {
 
 .hero {
   position: relative;
-  background: url('images/shoe1.jpg.jpeg') no-repeat center/cover;
+  background: url('images/hero-banner.jpg.png') no-repeat center/cover;
   color: white;
   text-align: center;
   padding: 160px 20px;
