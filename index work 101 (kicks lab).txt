@@ -42,9 +42,9 @@
     </div>
   </section>
 
- <footer>
+<footer>
   <p>&copy; 2025 Kicks Lab | 
-     <a href="https://www.instagram.com/kickslab.lb/" target="_blank">
+     <a href="https://www.instagram.com/kicks_lab.lb?igsh=MTZ2YnVrM3Rxa2trcg==" target="_blank">
        Follow us on Instagram
      </a>
   </p>
