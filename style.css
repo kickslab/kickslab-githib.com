@@ -2,24 +2,28 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background: #f5f5f5;
-  color: #333;
+  background: #121212; /* Dark luxury background */
+  color: #f0f0f0;
 }
+
 header {
   text-align: center;
   background: #000;
   color: #fff;
-  padding: 20px;
-  letter-spacing: 1px;
-  font-weight: 600;
+  padding: 25px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
+
 .hero {
   position: relative;
   background: url('images/shoe1.jpg.jpeg') no-repeat center/cover;
   color: white;
   text-align: center;
-  padding: 150px 20px;
+  padding: 160px 20px;
 }
+
 .hero::before {
   content: "";
   position: absolute;
@@ -27,90 +31,122 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* dark overlay */
+  background: rgba(0, 0, 0, 0.6); /* darker overlay for luxury */
 }
+
 .hero h2, .hero p, .hero .btn {
   position: relative;
   z-index: 1;
 }
+
 .hero h2 {
-  font-size: 48px;
-  margin-bottom: 10px;
+  font-size: 50px;
+  margin-bottom: 12px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  color: #f8f8f8;
 }
+
 .hero p {
   font-size: 18px;
-  opacity: 0.9;
-  margin-bottom: 20px;
+  opacity: 0.85;
+  margin-bottom: 25px;
+  color: #ccc;
 }
+
 .hero .btn {
-  background: #ff3c00;
+  background: #ff3c00; /* luxury orange accent */
   color: white;
-  padding: 12px 25px;
+  padding: 14px 28px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
   transition: all 0.3s ease;
   font-weight: bold;
 }
+
 .hero .btn:hover {
   background: #e63200;
   transform: scale(1.08);
 }
+
 .products {
-  padding: 50px 20px;
+  padding: 60px 20px;
   text-align: center;
 }
+
+.products h2 {
+  color: #f8f8f8;
+  font-size: 32px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 25px;
+  gap: 30px;
   max-width: 1100px;
   margin: auto;
 }
+
 .product-card {
-  background: white;
+  background: #1e1e1e;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
   transition: all 0.3s ease;
 }
+
 .product-card:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
 }
+
 .product-card img {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 10px;
+  border-radius: 10px;
+  margin-bottom: 12px;
 }
+
+.product-card h3 {
+  color: #fff;
+}
+
+.product-card p {
+  color: #aaa;
+}
+
 .order-btn {
   display: inline-block;
-  margin-top: 10px;
-  padding: 8px 14px;
-  background: #25d366;
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #25d366; /* WhatsApp green */
   color: white;
   text-decoration: none;
   border-radius: 5px;
   transition: all 0.3s ease;
   font-weight: bold;
 }
+
 .order-btn:hover {
   background: #1ebe57;
   transform: scale(1.05);
 }
+
 footer {
   background: #000;
-  color: white;
+  color: #ccc;
   text-align: center;
-  padding: 15px;
+  padding: 18px;
   font-size: 14px;
-  letter-spacing: 0.5px;
+  letter-spacing: 1px;
 }
+
 .instagram-btn {
   display: inline-block;
   margin-top: 12px;
-  padding: 10px 18px;
+  padding: 10px 20px;
   background: #E1306C; /* Instagram pink */
   color: white;
   text-decoration: none;
@@ -118,7 +154,8 @@ footer {
   font-weight: bold;
   transition: all 0.3s ease;
 }
+
 .instagram-btn:hover {
-  background: #C13584; /* darker shade on hover */
+  background: #C13584;
   transform: scale(1.05);
 }
