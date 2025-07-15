@@ -22,35 +22,35 @@
 
   <section id="products" class="products">
     <h2>Our Collection</h2>
-    <div class="product-grid">
-
-      <div class="product-card">
-        <img src="images/shoe1.jpg.jpeg" alt="Jordans 1 X">
-        <h3>Jordans 1 X</h3>
-        <p>$70</p>
-        <a class="order-btn" href="https://wa.me/96176831445?text=Hello,%20I%20am%20interested%20in%20buying%20the%20Jordans%201%20X" target="_blank">
-          Order on WhatsApp
-        </a>
+    <div class="carousel-container">
+      <div class="carousel">
+        <div class="product-card">
+          <img src="images/shoe1.jpg.jpeg" alt="Jordans 1 X">
+          <h3>Jordans 1 X</h3>
+          <p>$70</p>
+          <a class="order-btn" href="https://wa.me/96176831445?text=Hello,%20I%20am%20interested%20in%20buying%20the%20Jordans%201%20X" target="_blank">
+            Order on WhatsApp
+          </a>
+        </div>
+        <div class="product-card">
+          <img src="images/shoe2.jpg.jpeg" alt="Jordans 2">
+          <h3>Jordans 2</h3>
+          <p>$70</p>
+          <a class="order-btn" href="https://wa.me/96176831445?text=Hello,%20I%20am%20interested%20in%20buying%20the%20Jordans%202" target="_blank">
+            Order on WhatsApp
+          </a>
+        </div>
+        <div class="product-card">
+          <img src="images/shoe3.jpg.jpeg" alt="Samir Jwaydi">
+          <h3>Samir Jwaydi</h3>
+          <p>$200</p>
+          <a class="order-btn" href="https://wa.me/96176831445?text=Hello,%20I%20am%20interested%20in%20buying%20the%20Samir%20Jwaydi" target="_blank">
+            Order on WhatsApp
+          </a>
+        </div>
       </div>
-
-      <div class="product-card">
-        <img src="images/shoe2.jpg.jpeg" alt="Jordans 2">
-        <h3>Jordans 2</h3>
-        <p>$70</p>
-        <a class="order-btn" href="https://wa.me/96176831445?text=Hello,%20I%20am%20interested%20in%20buying%20the%20Jordans%202" target="_blank">
-          Order on WhatsApp
-        </a>
-      </div>
-
-      <div class="product-card">
-        <img src="images/shoe3.jpg.jpeg" alt="Samir Jwaydi">
-        <h3>Samir Jwaydi</h3>
-        <p>$200</p>
-        <a class="order-btn" href="https://wa.me/96176831445?text=Hello,%20I%20am%20interested%20in%20buying%20the%20Samir%20Jwaydi" target="_blank">
-          Order on WhatsApp
-        </a>
-      </div>
-
+      <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
     </div>
   </section>
 
@@ -62,5 +62,27 @@
       <i class="fab fa-instagram"></i> Follow us
     </a>
   </footer>
+
+  <script>
+    const carousel = document.querySelector('.carousel');
+    const nextBtn = document.querySelector('.next');
+    const prevBtn = document.querySelector('.prev');
+
+    let scrollAmount = 0;
+    const scrollStep = 250;
+
+    nextBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: scrollStep, behavior: 'smooth' });
+    });
+
+    prevBtn.addEventListener('click', () => {
+      carousel.scrollBy({ left: -scrollStep, behavior: 'smooth' });
+    });
+
+    // Auto slide every 4 seconds
+    setInterval(() => {
+      carousel.scrollBy({ left: scrollStep, behavior: 'smooth' });
+    }, 4000);
+  </script>
 </body>
 </html>
