@@ -69,3 +69,17 @@ footer {
   text-align: center;
   padding: 10px;
 }
+.instagram-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #E1306C; /* Instagram pink */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.instagram-btn:hover {
+  background: #C13584; /* darker shade on hover */
+}
