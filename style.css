@@ -30,7 +30,6 @@ header p {
   padding: 160px 20px;
 }
 
-
 .hero::before {
   content: "";
   position: absolute;
