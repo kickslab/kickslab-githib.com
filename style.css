@@ -24,11 +24,12 @@ header p {
 
 .hero {
   position: relative;
-  background: url('images/background.jpg') no-repeat center/cover;
+  background: url("images/new backround image.jpg.png") no-repeat center/cover;
   color: white;
   text-align: center;
   padding: 160px 20px;
 }
+
 
 .hero::before {
   content: "";
